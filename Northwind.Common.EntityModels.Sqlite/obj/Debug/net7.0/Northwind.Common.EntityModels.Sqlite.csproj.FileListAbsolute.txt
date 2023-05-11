@@ -1,0 +1,14 @@
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/bin/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.deps.json
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/bin/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.runtimeconfig.json
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/bin/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.dll
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/bin/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.pdb
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.csproj.AssemblyReference.cache
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.AssemblyInfoInputs.cache
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.AssemblyInfo.cs
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.csproj.CoreCompileInputs.cache
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.dll
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/refint/Northwind.Common.EntityModels.Sqlite.dll
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.pdb
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.genruntimeconfig.cache
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.EntityModels.Sqlite/obj/Debug/net7.0/ref/Northwind.Common.EntityModels.Sqlite.dll

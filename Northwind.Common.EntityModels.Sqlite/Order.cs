@@ -24,7 +24,7 @@ public partial class Order
     public string? CustomerId { get; set; }
 
     [Column(TypeName = "INT")]
-    public long? EmployeeId { get; set; }
+    public int? EmployeeId { get; set; }
 
     [Column(TypeName = "datetime")]
     public DateTime? OrderDate { get; set; }
@@ -36,7 +36,7 @@ public partial class Order
     public DateTime? ShippedDate { get; set; }
 
     [Column(TypeName = "INT")]
-    public long? ShipVia { get; set; }
+    public int? ShipVia { get; set; }
 
     [Column(TypeName = "money")]
     public decimal? Freight { get; set; }

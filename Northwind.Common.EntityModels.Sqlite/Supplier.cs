@@ -11,7 +11,7 @@ namespace Northwind.Common;
 public partial class Supplier
 {
     [Key]
-    public long SupplierId { get; set; }
+    public int SupplierId { get; set; }
 
     [Column(TypeName = "nvarchar (40)")]
     [StringLength(40)]

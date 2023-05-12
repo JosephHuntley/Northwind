@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "FGEin3S4PICS7Fd94eql5M5albmJLO9R6AZV/Ii8cGs=",
+  "Source": "Northwind.Web",
+  "BasePath": "_content/Northwind.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Northwind.Web/wwwroot",
+      "Source": "Northwind.Web",
+      "ContentRoot": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Web/wwwroot/",
+      "BasePath": "_content/Northwind.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

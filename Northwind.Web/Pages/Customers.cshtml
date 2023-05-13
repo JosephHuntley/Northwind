@@ -1,0 +1,32 @@
+@page
+@using Northwind.Common
+@model Northwind.Web.Pages.CustomersModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="row">
+  <h1 class="display-2">Customers</h1>
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr><tr>
+        <th>Company Name</th>
+        <th>Country</th>
+        <th>Phone</th>
+      </tr></tr>
+    </thead>
+    <tbody>
+            @if (Model.Customers is not null)
+            {
+                @foreach (Customer c in Model.Customers)
+                {
+                        <a href="/customers">
+                            <tr>
+                                <td>@c.CompanyName</td>
+                                <td>@c.Country</td>
+                                <td>@c.Phone</td>
+                            </tr>
+                        </a>
+                }
+            }
+            </tbody>
+          </table>
+        </div>

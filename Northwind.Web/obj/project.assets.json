@@ -516,6 +516,22 @@
         "runtime": {
           "bin/placeholder/Northwind.Common.EntityModels.Sqlite.dll": {}
         }
+      },
+      "Northwind.Razor.Employees/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Northwind.Common.DataContext.Sqlite": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Northwind.Razor.Employees.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Northwind.Razor.Employees.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -1163,11 +1179,17 @@
       "type": "project",
       "path": "../Northwind.Common.EntityModels.Sqlite/Northwind.Common.EntityModels.Sqlite.csproj",
       "msbuildProject": "../Northwind.Common.EntityModels.Sqlite/Northwind.Common.EntityModels.Sqlite.csproj"
+    },
+    "Northwind.Razor.Employees/1.0.0": {
+      "type": "project",
+      "path": "../Northwind.Razor.Employees/Northwind.Razor.Employees.csproj",
+      "msbuildProject": "../Northwind.Razor.Employees/Northwind.Razor.Employees.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Northwind.Common.DataContext.Sqlite >= 1.0.0"
+      "Northwind.Common.DataContext.Sqlite >= 1.0.0",
+      "Northwind.Razor.Employees >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1197,6 +1219,9 @@
           "projectReferences": {
             "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.DataContext.Sqlite/Northwind.Common.DataContext.Sqlite.csproj": {
               "projectPath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Common.DataContext.Sqlite/Northwind.Common.DataContext.Sqlite.csproj"
+            },
+            "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/Northwind.Razor.Employees.csproj": {
+              "projectPath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/Northwind.Razor.Employees.csproj"
             }
           }
         }

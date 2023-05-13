@@ -1,4 +1,5 @@
 using Northwind.Common; // AddNorthwindContext extension method
+using Microsoft.AspNetCore.Server.Kestrel.Core; // HttpProtocols
 
 
 // Creates a host for the website using defaults for a web host that is then built.
@@ -7,8 +8,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Adds DbContext
 builder.Services.AddNorthwindContext();
 
+// Used to decompress the http request body
+builder.Services.AddRequestDecompression();
+
 // Adds Razor page functionality
 builder.Services.AddRazorPages();
+
+builder.WebHost.ConfigureKestrel((context, options) =>
+{
+  options.ListenAnyIP(5001, listenOptions =>
+  {
+    listenOptions.Protocols = HttpProtocols.Http1AndHttp2AndHttp3;
+    listenOptions.UseHttps(); // HTTP/3 requires secure connections
+  });
+});
 
 var app = builder.Build();
 
@@ -25,8 +38,33 @@ if (!app.Environment.IsDevelopment())
   app.UseHsts();
 }
 
+app.Use(async (HttpContext context, Func<Task> next) =>
+{
+    RouteEndpoint rep = context.GetEndpoint() as RouteEndpoint;
+
+    if(rep is not null){
+        WriteLine($"Endpoint name: {rep.DisplayName}");
+        WriteLine($"Endpoint route pattern: {rep.RoutePattern.RawText}");
+    }
+
+    if (context.Request.Path == "/bonjour")
+    {
+        // in the case of a match on URL path, this becomes a terminating
+        // delegate that returns so does not call the next delegate
+        await context.Response.WriteAsync("Bonjour Monde!");
+        return;
+    }
+
+    // we could modify the request before calling the next delegate
+    await next();
+    // we could modify the response after calling the next delegate
+
+});
+
 app.UseHttpsRedirection();
 
+// Decompress the http request body
+app.UseRequestDecompression();
 
 app.UseDefaultFiles(); // index.html, default.html, and so on
 app.UseStaticFiles();

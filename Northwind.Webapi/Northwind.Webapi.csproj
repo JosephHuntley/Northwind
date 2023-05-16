@@ -10,5 +10,16 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
+  <ItemGroup>
+    <!-- change Sqlite to SqlServer if you prefer -->
+    <ProjectReference
+      Include="..\Northwind.Common.DataContext.Sqlite\Northwind.Common.DataContext.Sqlite.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="System.Console" Static="true" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
 
 </Project>

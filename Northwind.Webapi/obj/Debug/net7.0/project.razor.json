@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/obj/Debug/net7.0/project.razor.json",
-  "FilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/Northwind.Razor.Employees.csproj",
+  "SerializedFilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Webapi/obj/Debug/net7.0/project.razor.json",
+  "FilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Webapi/Northwind.Webapi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "7.0",
@@ -18642,23 +18642,7 @@
     ],
     "CSharpLanguageVersion": 1100
   },
-  "RootNamespace": "Northwind.Razor.Employees",
-  "Documents": [
-    {
-      "FilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/Areas/PacktFeatures/Pages/_ViewStart.cshtml",
-      "TargetPath": "Areas\\PacktFeatures\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/Areas/PacktFeatures/Pages/Shared/_Employee.cshtml",
-      "TargetPath": "Areas\\PacktFeatures\\Pages\\Shared\\_Employee.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Razor.Employees/Areas/PacktFeatures/Pages/Employees.cshtml",
-      "TargetPath": "Areas\\PacktFeatures\\Pages\\Employees.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "RootNamespace": "Northwind.Webapi",
+  "Documents": [],
   "SerializationFormat": "0.3"
 }

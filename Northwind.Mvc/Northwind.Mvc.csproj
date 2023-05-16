@@ -18,5 +18,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5" />
   </ItemGroup>
+  <ItemGroup>
+    <!-- change Sqlite to SqlServer if you prefer -->
+    <ProjectReference
+      Include="..\Northwind.Common.DataContext.Sqlite\Northwind.Common.DataContext.Sqlite.csproj" />
+  </ItemGroup>
 
 </Project>

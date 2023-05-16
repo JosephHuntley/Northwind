@@ -77,3 +77,7 @@
 /Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/obj/Debug/net7.0/Northwind.Mvc.pdb
 /Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/obj/Debug/net7.0/Northwind.Mvc.genruntimeconfig.cache
 /Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/obj/Debug/net7.0/ref/Northwind.Mvc.dll
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/bin/Debug/net7.0/Northwind.Common.DataContext.Sqlite.dll
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/bin/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.dll
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/bin/Debug/net7.0/Northwind.Common.DataContext.Sqlite.pdb
+/Users/joe/Desktop/CODE/Backend/Northwind/Northwind.Mvc/bin/Debug/net7.0/Northwind.Common.EntityModels.Sqlite.pdb

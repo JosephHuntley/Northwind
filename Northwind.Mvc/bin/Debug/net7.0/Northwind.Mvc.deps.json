@@ -12,7 +12,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
           "Microsoft.AspNetCore.Identity.UI": "7.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.5",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.5"
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
+          "Northwind.Common.DataContext.Sqlite": "1.0.0"
         },
         "runtime": {
           "Northwind.Mvc.dll": {}
@@ -444,6 +445,23 @@
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
         }
+      },
+      "Northwind.Common.DataContext.Sqlite/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.5",
+          "Northwind.Common.EntityModels.Sqlite": "1.0.0"
+        },
+        "runtime": {
+          "Northwind.Common.DataContext.Sqlite.dll": {}
+        }
+      },
+      "Northwind.Common.EntityModels.Sqlite/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "7.0.5"
+        },
+        "runtime": {
+          "Northwind.Common.EntityModels.Sqlite.dll": {}
+        }
       }
     }
   },
@@ -718,6 +736,16 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "Northwind.Common.DataContext.Sqlite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Northwind.Common.EntityModels.Sqlite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

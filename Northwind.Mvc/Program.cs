@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Northwind.Mvc.Data;
+using System.Net.Http.Headers; // MediaTypeWithQualityHeaderValue
 
 // Section 2 - configure the host web server including services
 // Dependency Injection 
@@ -19,6 +20,15 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddHttpClient(name: "Northwind.WebApi",
+  configureClient: options =>
+  {
+    options.BaseAddress = new Uri("http://localhost:5038/");
+    options.DefaultRequestHeaders.Accept.Add(
+      new MediaTypeWithQualityHeaderValue(
+      mediaType: "application/json", quality: 1.0));
+  });
 
 var app = builder.Build();
 
